@@ -1,0 +1,31 @@
+package kyuu8
+
+import "strings"
+
+//An AI has infected a text with a character!!
+//
+//This text is now fully mutated to this character.
+//
+//If the text or the character are empty, return an empty string.
+//There will never be a case when both are empty as nothing is going on!!
+//
+//Note: The character is a string of length 1 or an empty string.
+//
+//Example
+//text before = "abc"
+//character   = "z"
+//text after  = "zzz"
+
+//var _ = Describe("Tests", func() {
+//	It("Sample tests", func() {
+//		dotest("abc","z", "zzz")
+//		dotest("","z", "")
+//		dotest("abc","", "")
+//		dotest("_3ebzgh4","&", "&&&&&&&&")
+//		dotest("//case"," ", "      ")
+//	})
+//})
+
+func Contamination(text, char string) string {
+	return strings.Repeat(char, len(text))
+}
